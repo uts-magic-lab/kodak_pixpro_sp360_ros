@@ -143,6 +143,12 @@ And when playing around with [undistortFunctions](http://rpg.ifi.uzh.ch/software
 
 Which looks way better, but I think it can be improved.
 
+**Note** that to compile `undistortFunctions/main.cpp` you can use the command:
+
+    g++ -o main.exe main.cpp ocam_functions.cpp -I/usr/include/opencv -lopencv_core -lopencv_highgui -lopencv_imgproc
+
+It took me way too long to figure it out.
+
 # ToDo's
 
 * Make a better calibration.
