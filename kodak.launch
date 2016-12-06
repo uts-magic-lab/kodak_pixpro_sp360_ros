@@ -1,0 +1,25 @@
+<launch>
+   <!-- launch video stream -->
+   <include file="$(find video_stream_opencv)/launch/camera.launch" >
+        <!-- node name and ros graph name -->
+        <arg name="camera_name" value="kodak" />
+        <!-- means video device 1, /dev/video1 -->
+        <arg name="video_stream_provider" value="1" />
+        <!-- throttling the querying of frames to -->
+        <arg name="fps" value="15" />
+        <!-- setting frame_id -->
+        <arg name="frame_id" value="kodak_optical_frame" />
+        <!-- camera info loading, take care as it needs the "file:///" at the start , e.g.:
+        "file:///$(find your_camera_package)/config/your_camera.yaml" -->
+        <arg name="camera_info_url" value="" />
+        <!-- flip the image horizontally (mirror it) -->
+        <arg name="flip_horizontal" value="false" />
+        <!-- flip the image vertically -->
+        <arg name="flip_vertical" value="false" />
+        <!-- force width and height, 0 means no forcing -->
+        <arg name="width" value="1440"/>
+        <arg name="height" value="1440" />
+        <!-- visualize on an image_view window the stream generated -->
+        <arg name="visualize" value="true" />
+   </include>
+</launch>

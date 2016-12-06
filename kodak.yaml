@@ -1,0 +1,20 @@
+image_width: 1440
+image_height: 1440
+camera_name: kodak
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [559.7772332675477, 0, 654.6891822497959, 0, 537.9001480261843, 757.5374958985061, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.1710342568253523, 0.01562344385534763, -0.006842079559350427, 0.005880933792022186, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [471.8281555175781, 0, 686.7856496391687, 0, 0, 427.0946044921875, 763.6798197288299, 0, 0, 0, 1, 0]
