@@ -17,7 +17,7 @@ Now you can plug the USB cable to the camera and the computer.
 # Prepare a driver package
 
 I use [video_stream_opencv](http://wiki.ros.org/video_stream_opencv) mainly because
-I wrote it. It just works.
+I wrote it. It just works. You can install it with `sudo apt-get install ros-indigo-video-stream-opencv`.
 
 Create a launchfile (based on the original one called `webcam.launch` in `video_stream_opencv`)
 called [kodak.launch](kodak.launch) with the following contents:
